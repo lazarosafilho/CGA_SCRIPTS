@@ -70,7 +70,8 @@
         ) AS NOME_NASC,
 
         CAST(vma.data_emissao AS DATE) AS 'data',
-        vma.numero_processo
+        vma.numero_processo,
+        vma.tipo_mandado
 
     FROM 
         db_bisp_sip_reporting.vw_individuo_sip s
